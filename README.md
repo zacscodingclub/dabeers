@@ -1,24 +1,7 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Road Map
+1. Get basic server request working
+2. Push to heroku
+3. Build data gem
+4. Use knowledge from data gem to add information to Beers table
+5. Build out basic front end using Ember
+6. to be continued
