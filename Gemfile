@@ -26,6 +26,9 @@ gem 'puma', '~> 3.0'
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'awesome_print'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'rails-controller-testing'
   gem 'pry'
 end
 
