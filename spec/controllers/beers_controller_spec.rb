@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 
-RSpec.describe API::V1::BeersController, type: :controller do
+RSpec.describe Api::V1::BeersController, type: :controller do
   let(:valid_attributes) {
     skip("Add a hash of attributes valid for your model")
   }
