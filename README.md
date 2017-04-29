@@ -6,8 +6,14 @@
 5. Build out basic front end using Ember
 6. to be continued
 
-## Links
-https://devcenter.heroku.com/articles/getting-started-with-rails5
-https://www.sitepoint.com/introduction-to-using-jwt-in-rails/
 
-https://emberigniter.com/modern-bridge-ember-and-rails-5-with-json-api/
+## General Info
+* Rails 5 API backend
+* React front end
+
+## Links
+* https://devcenter.heroku.com/articles/getting-started-with-rails5
+
+* https://www.sitepoint.com/introduction-to-using-jwt-in-rails/
+
+* https://www.fullstackreact.com/articles/how-to-get-create-react-app-to-work-with-your-rails-api/

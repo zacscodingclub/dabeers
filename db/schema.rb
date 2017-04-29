@@ -15,18 +15,18 @@ ActiveRecord::Schema.define(version: 20170331003710) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "beers", force: :cascade do |t|
-    t.string   "name"
+  create_table "beers", id: :serial, force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "brewery_id"
-    t.index ["brewery_id"], name: "index_beers_on_brewery_id", using: :btree
+    t.integer "brewery_id"
+    t.index ["brewery_id"], name: "index_beers_on_brewery_id"
   end
 
-  create_table "breweries", force: :cascade do |t|
-    t.string   "name"
-    t.string   "city"
-    t.string   "state"
+  create_table "breweries", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "city"
+    t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
