@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :applications
-  namespace :api, defaults: {format: 'json'} do
-    namespace :v1 do
+  scope :api, defaults: {format: 'json'} do
+    scope :v1 do
+      resources :applications
       resources :breweries
       resources :beers
     end

@@ -28,13 +28,6 @@ RSpec.describe Api::V1::BreweriesController, type: :controller do
     end
   end
 
-  describe "GET #new" do
-    it "assigns a new brewery as @brewery" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:brewery)).to be_a_new(Brewery)
-    end
-  end
-
   describe "GET #edit" do
     it "assigns the requested brewery as @brewery" do
       brewery = Brewery.create! valid_attributes

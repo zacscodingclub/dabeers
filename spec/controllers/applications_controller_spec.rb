@@ -18,7 +18,7 @@ require 'rails_helper'
 # Message expectations are only used when there is no simpler way to specify
 # that an instance is receiving a specific message.
 
-RSpec.describe ApplicationsController, type: :controller do
+RSpec.describe Api::V1::ApplicationsController, type: :controller do
 
   # This should return the minimal set of attributes required to create a valid
   # Application. As you add validations to Application, be sure to
@@ -49,13 +49,6 @@ RSpec.describe ApplicationsController, type: :controller do
       application = Application.create! valid_attributes
       get :show, params: {id: application.to_param}, session: valid_session
       expect(assigns(:application)).to eq(application)
-    end
-  end
-
-  describe "GET #new" do
-    it "assigns a new application as @application" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:application)).to be_a_new(Application)
     end
   end
 

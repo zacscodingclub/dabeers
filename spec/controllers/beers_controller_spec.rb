@@ -28,13 +28,6 @@ RSpec.describe Api::V1::BeersController, type: :controller do
     end
   end
 
-  describe "GET #new" do
-    it "assigns a new beer as @beer" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:beer)).to be_a_new(Beer)
-    end
-  end
-
   describe "GET #edit" do
     it "assigns the requested beer as @beer" do
       beer = Beer.create! valid_attributes
