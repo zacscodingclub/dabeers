@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  scope :api, defaults: {format: 'json'} do
-    scope :v1 do
-      resources :applications
-      resources :breweries
-      resources :beers
-    end
+  scope module: :v1,  defaults: { format: 'json' } do
+    resources :applications
+    resources :breweries
+    resources :beers
   end
 end
